@@ -1,39 +1,45 @@
-import React from 'react'
-import projects from '../../projects.json'
+import React from 'react';
+import projects from '../../projects.json';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Box } from '@mui/material';
+
+
 
 const Projects = () => {
-    return(
-        <>
-        <Typography variant='h2' sx={{textAlign: 'center', padding: '10px'}}>Work Portfolio</Typography>
-      <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-        </>
-    )
+  return (
+    <>
+      <Typography variant='h2' sx={{ textAlign: 'center', padding: '10px' }}>Work Portfolio</Typography>
+      <Box className='project' sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', gap: '20px' }}>
+        {projects.map((project) => (
+          <Card key={project.id} sx={{ maxWidth: 345, padding: '10px',boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.3)' }}>
+            <CardMedia
+              component="img"
+              alt={project.alt}
+              height="140"
+              image = {require(`${project.image}`)}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {project.title}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {project.description}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small" href={project.deployed}>Visit Site</Button>
+              <Button size="small" href={project.repo}>Git Repo</Button>
+            </CardActions>
+          </Card>
+        ))}
+      </Box>
+    </>
+  );
 }
 
-export default Projects
+export default Projects;

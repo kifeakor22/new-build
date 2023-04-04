@@ -4,30 +4,30 @@
       "id": 1,
       "title": "Furniture shop",
       "repo":
-        "https://kifeakor22.github.io/furniture-shop/", 
+        "https://github.com/kifeakor22/furniture-shop ", 
         "image":"./assets/furniture-shop(1).png",
         "alt": "furniture shop",
-        "deployed": "https://github.com/kifeakor22/furniture-shop",
+        "deployed": "https://kifeakor22.github.io/furniture-shop/",
         "description": "Built with html and css grid"
     },
     {
       "id": 2,
       "title": "Rock Nation",
       "repo":
-        "https://kifeakor22.github.io/rock-nation/",
+        "https://github.com/kifeakor22/rock-nation ",
         "image":"./assets/rock(1).png",
         "alt": "Rock Nation",
-        "deployed": "https://github.com/kifeakor22/rock-nation",
+        "deployed": "https://kifeakor22.github.io/rock-nation/",
         "description": "Built with html and Bootstrap"
     },
     {
       "id": 3,
       "title":"Travel California",
       "repo":
-        "https://kifeakor22.github.io/travel-califonia/",
+        "https://github.com/kifeakor22/travel-califonia ",
         "image":"./assets/hotel(1).png",
         "alt": "Travel website image",
-        "deployed": "https://github.com/kifeakor22/travel-califonia",
+        "deployed": " https://kifeakor22.github.io/travel-califonia/",
         "description": "Built with html, flexbox and css grid"
     },
     {
@@ -37,17 +37,16 @@
           "https://github.com/kifeakor22/whiskytopia-build",
           "image":"./assets/whiskytopia.PNG",
           "alt": "Image of whiskytopia site",
-          "deployed": "https://whiskytopia.co.uk",
+          "deployed": "https://kifeakor22.github.io/whiskytopia-build/",
           "description": "A website designed and built  with html5 and javascript."
       },
       {
         "id": 5,
         "title": "What Can I Cook",
-        "repo":
-          "https://kifeakor22.github.io/food-court/",
+        "repo":"https://github.com/kifeakor22/new-project-build  ",
           "image":"./assets/foodApp.PNG",
           "alt": "Food App",
-          "deployed": "https://github.com/kifeakor22/new-project-build ",
+          "deployed": "https://kifeakor22.github.io/food-court/",
           "description": "Suggest what food to make with instructions based on the ingredient entered by the user"
       },
       {
@@ -59,6 +58,17 @@
           "alt": "weather dashboard",
           "deployed": "https://github.com/kifeakor22/weather-dashboard",
           "description": "A 5 days weather forecast App that uses an API from openWeather"
+       
+      },
+       {
+        "id": 7,
+        "title": "Air Quality Tracker",
+        "repo":
+          "https://kifeakor22.github.io/air-quality-app/",
+          "image":"./assets/air-app.PNG",
+          "alt": "air quality dashboard",
+          "deployed": "https://calm-narwhal-f7ffd6.netlify.app/",
+          "description": "A React based app which allows a user to search their location for Air Quality information for both current and forecasted air quality. The app also provides a visual dashboard to help inform users about whether it would be safe for different outdoor activities."
        
       }
   ]
