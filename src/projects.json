@@ -1,0 +1,64 @@
+
+ [
+    {
+      "id": 1,
+      "title": "Furniture shop",
+      "repo":
+        "https://kifeakor22.github.io/furniture-shop/", 
+        "image":"./assets/furniture-shop(1).png",
+        "alt": "furniture shop",
+        "deployed": "https://github.com/kifeakor22/furniture-shop",
+        "description": "Built with html and css grid"
+    },
+    {
+      "id": 2,
+      "title": "Rock Nation",
+      "repo":
+        "https://kifeakor22.github.io/rock-nation/",
+        "image":"./assets/rock(1).png",
+        "alt": "Rock Nation",
+        "deployed": "https://github.com/kifeakor22/rock-nation",
+        "description": "Built with html and Bootstrap"
+    },
+    {
+      "id": 3,
+      "title":"Travel California",
+      "repo":
+        "https://kifeakor22.github.io/travel-califonia/",
+        "image":"./assets/hotel(1).png",
+        "alt": "Travel website image",
+        "deployed": "https://github.com/kifeakor22/travel-califonia",
+        "description": "Built with html, flexbox and css grid"
+    },
+    {
+        "id": 4,
+        "title": "WhiskyTopia",
+        "repo":
+          "https://github.com/kifeakor22/whiskytopia-build",
+          "image":"./assets/whiskytopia.PNG",
+          "alt": "Image of whiskytopia site",
+          "deployed": "https://whiskytopia.co.uk",
+          "description": "A website designed and built  with html5 and javascript."
+      },
+      {
+        "id": 5,
+        "title": "What Can I Cook",
+        "repo":
+          "https://kifeakor22.github.io/food-court/",
+          "image":"./assets/foodApp.PNG",
+          "alt": "Food App",
+          "deployed": "https://github.com/kifeakor22/new-project-build ",
+          "description": "Suggest what food to make with instructions based on the ingredient entered by the user"
+      },
+      {
+        "id": 6,
+        "title": "Weather Dashboard App",
+        "repo":
+          "https://kifeakor22.github.io/weather-app/",
+          "image":"./assets/weather-app.PNG",
+          "alt": "weather dashboard",
+          "deployed": "https://github.com/kifeakor22/weather-dashboard",
+          "description": "A 5 days weather forecast App that uses an API from openWeather"
+       
+      }
+  ]
