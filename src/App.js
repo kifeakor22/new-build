@@ -4,24 +4,27 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import './App.css';
 import NavBar from './components/navbar';
-import Herogrid from './components/herogrid';
-import Projects from './components/projects';
+import Home from './components/Home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 
 function App() {
   return (
     <div className="App">
-      <Helmet>
-        <title>New-Build</title>
-      </Helmet>
-      <NavBar/>
-      <Herogrid/>
-      <Projects/>
+      <Router>
+        <div>
+        <Helmet>
+          <title>Kc Portfolio</title>
+        </Helmet>
+        <NavBar/>
+        <Routes>
+          <Route path='/' element= {<Home/>}></Route>
+      </Routes>
+      </div>
+      </Router>
     </div>
   );
 }

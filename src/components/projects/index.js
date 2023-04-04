@@ -13,8 +13,8 @@ import { Box } from '@mui/material';
 const Projects = () => {
   return (
     <>
-      <Typography variant='h2' sx={{ textAlign: 'center', padding: '10px' }}>Work Portfolio</Typography>
-      <Box className='project' sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', gap: '20px' }}>
+      <Typography variant='h4' sx={{ textAlign: 'center', padding: '10px' }}>Work Portfolio</Typography>
+      <Box className='project' sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', gap: '20px', padding: '20px' }}>
         {projects.map((project) => (
           <Card key={project.id} sx={{ maxWidth: 345, padding: '10px',boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.3)' }}>
             <CardMedia
@@ -41,5 +41,4 @@ const Projects = () => {
     </>
   );
 }
-
 export default Projects;

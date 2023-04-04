@@ -28,11 +28,11 @@ const Herogrid = () => {
         </Grid>
         <Grid item xs={12} sm={8} md={8}>
           <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'left' }}>
-            <Typography variant="h2">
+            <Typography variant="h3">
               Hello my name is KC
             </Typography>
-            <Typography variant="h2">
-              A UX/UI Frontend developer
+            <Typography variant="h4">
+              A UX/UI Frontend developer.
             </Typography>
             <Typography variant="h5">
               With great focus on accessibility and mobile-first responsive designs. Web development allows me to combine my creative and technical skills in a way that is both challenging and rewarding.
