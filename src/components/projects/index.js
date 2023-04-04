@@ -7,6 +7,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 
 
 
@@ -33,7 +35,7 @@ const Projects = () => {
             </CardContent>
             <CardActions>
               <Button size="small" href={project.deployed}>Visit Site</Button>
-              <Button size="small" href={project.repo}>Git Repo</Button>
+                  <Button size="small" href={project.repo}>Git Repo <span><GitHubIcon sx={{padding: '5px', color: 'grey'}} /></span></Button>
             </CardActions>
           </Card>
         ))}
