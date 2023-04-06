@@ -8,6 +8,7 @@ import './App.css';
 import NavBar from './components/navbar';
 import Home from './components/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Contact from './components/Contact';
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <NavBar/>
         <Routes>
           <Route path='/' element= {<Home/>}></Route>
+           <Route path="/contact" element={<Contact/>}></Route>
       </Routes>
       </div>
       </Router>

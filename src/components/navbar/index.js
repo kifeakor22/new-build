@@ -14,9 +14,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
+import './style.css'
+
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact', 'Resume'];
+
 
 const NavBar = (props) => {
   const { window } = props;
@@ -33,13 +36,13 @@ const NavBar = (props) => {
       </Typography>
       <Divider/>
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+        
+          <ListItem disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={`Contact`} />
             </ListItemButton>
           </ListItem>
-        ))}
+
       </List>
     </Box>
   );
@@ -68,11 +71,10 @@ const NavBar = (props) => {
             KC Ifeakor
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block'}}}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }} variant="h4">
-                {item}
-              </Button>
-            ))}
+            
+            
+                 <Link Class="nav-link active" to="contact">contact</Link> 
+                
           </Box>
         </Toolbar>
       </AppBar>

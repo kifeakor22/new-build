@@ -8,6 +8,7 @@ import Avatar from '@mui/material/Avatar';
 import './style.css'
 import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 
 const Herogrid = () => {
@@ -44,7 +45,9 @@ const Herogrid = () => {
     </Box>
     <div>
         <Divider className='Divider' textAlign="right">
-            <Button variant="contained" size='large' style={{backgroundColor: 'grey'}}>Contact Me</Button>
+          <Link className='link' to="contact">
+            <Button variant="contained" size="large" style={{backgroundColor: 'grey'}}>Contact Me</Button>
+            </Link>
         </Divider>
 
     </div>
