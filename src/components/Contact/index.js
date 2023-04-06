@@ -33,7 +33,9 @@ const Contact = () => {
             EMAILJS_USER_ID
         ).then(
             (response)=> {
-                console.log('SUCESS',response.status, response.text)
+                 console.log('Sent, we will be in touch',response.status, response.text)
+                setName('Sent, we will be in touch',response.status, response.text)
+
                 
             }, (err)=>{console.log('FAILED...', err)}
         )
@@ -51,7 +53,7 @@ const Contact = () => {
   <div className="row">
     <div className="col-lg-6 col-sm-12">
       <label htmlFor="validationTextarea">Full name</label>
-      <input onChange={(e) => setName(e.target.value)} type="text" className="form-control" placeholder="Full name" required id='name' name='name'/>
+      <input  type="text" className="form-control" placeholder="Full name" required id='name' name='name'/>
     </div>
     <div className="col-lg-6 col-sm-12">
       <label htmlFor="validationTextarea">Email</label>
@@ -71,7 +73,7 @@ const Contact = () => {
 
             </div>
         </div>
-        <div>{name}</div>
+        <div id='response'>{name}</div>
         </>
     )
 }
