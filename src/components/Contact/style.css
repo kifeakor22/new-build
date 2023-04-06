@@ -19,3 +19,7 @@
 .contact {
     padding: 20px;
 }
+
+#submit {
+    background-image: linear-gradient(to right, black,grey, black);
+}
