@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
+import React, {useState, useEffect} from 'react'
 import { Typography } from '@mui/material';
 import './style.css'
 import {Button} from '@mui/material'
 import emailjs from "emailjs-com"; // handles email
 import {Divider} from '@mui/material';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 
 // emailjs configuration 
@@ -15,6 +15,13 @@ const EMAILJS_USER_ID = "jemLsqsOmUA2njnd9"; //public key
 
 
 const Contact = () => {
+
+    useEffect(()=>{
+    AOS.init({
+      duration: 2000
+    })
+   },[])
+
     const [response, setResponse] = useState('')
    
 // a function to send email, e .target is the form
@@ -42,11 +49,11 @@ const Contact = () => {
     return (
            <>
         <div className='container contact'>
-            <div className='row'>
+            <div data-aos="fade-down"  className='row'>
                 <Typography variant='h3' sx={{textAlign: 'center'}}> Get in touch</Typography>
                 <Typography variant='body2' sx={{textAlign: 'center'}}>I will reach out within 24hrs to provide you the information you need. Thank you for getting in touch.</Typography>
             </div>
-            <div className='row'>
+            <div data-aos="fade-up"  className='row'>
              <form className='contact-form' id='contactForm' onSubmit={(e) => sendEmail(e)}>
                 <div className="row">
                     <div className="col-lg-6 col-sm-12">

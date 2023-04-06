@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import projects from '../../projects.json';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -8,17 +8,27 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
 
 
 
 
 const Projects = () => {
+
+   useEffect(()=>{
+    AOS.init({
+      duration: 2000
+    })
+   },[])
   return (
     <>
+    
       <Typography variant='h4' sx={{ textAlign: 'center', padding: '10px' }}>Work Portfolio</Typography>
       <Box className='project' sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', gap: '20px', padding: '20px' }}>
         {projects.map((project) => (
-          <Card key={project.id} sx={{ maxWidth: 345, padding: '10px',boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.3)' }}>
+          <Card data-aos="fade-left" key={project.id} sx={{ maxWidth: 345, padding: '10px',boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.3)' }}>
             <CardMedia
               component="img"
               alt={project.alt}
