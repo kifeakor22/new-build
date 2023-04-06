@@ -42,7 +42,7 @@ const Herogrid = () => {
         </Grid>
         <Grid item xs={12} sm={8} md={8}>
           <Box data-aos="fade-left"  sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'left' }}>
-            <Typography variant="h3">
+            <Typography variant="h4">
               Hello my name is KC
             </Typography>
             <Typography variant="h4">
