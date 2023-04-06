@@ -5,3 +5,8 @@
 .link {
     text-decoration: none;
 }
+
+#cta {
+    background-image: linear-gradient(to right, black, grey, black);
+    }
+

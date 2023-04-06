@@ -59,7 +59,7 @@ const Herogrid = () => {
     <div>
         <Divider sx={{color: 'black'}} className='Divider' textAlign="right">
           <Link className='link' to="contact">
-            <Button variant="contained" size="large" style={{backgroundColor: 'black'}}>Contact Me</Button>
+            <Button id='cta' variant="contained" size="large" style={{backgroundColor: 'black'}}>Contact Me</Button>
             </Link>
         </Divider>
 
