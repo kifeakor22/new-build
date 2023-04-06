@@ -3,7 +3,14 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { Typography } from '@mui/material';
 import './style.css'
-import {Button} from '@mui/material';
+import {Button} from '@mui/material'
+import emailjs from "emailjs-com"; 
+
+const EMAILJS_SERVICE_ID = "service_2lyhxfb";
+const EMAILJS_TEMPLATE_ID = "template_95xjrxn";
+const EMAILJS_USER_ID = "jemLsqsOmUA2njnd9";
+
+
 
 
 
@@ -17,6 +24,21 @@ const Contact = () => {
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
 
+    const sendEmail = (e) => {
+        e.preventDefault()
+        emailjs.sendForm(
+            EMAILJS_SERVICE_ID,
+            EMAILJS_TEMPLATE_ID,
+            e.target,
+            EMAILJS_USER_ID
+        ).then(
+            (response)=> {
+                console.log('SUCESS',response.status, response.text)
+                
+            }, (err)=>{console.log('FAILED...', err)}
+        )
+    }
+
     return (
            <>
         <div className='container'>
@@ -25,27 +47,28 @@ const Contact = () => {
                 <Typography variant='body2' sx={{textAlign: 'center'}}>I will reach out within 24hrs to provide you the information you need. Thank you for getting in touch.</Typography>
             </div>
             <div className='row'>
-                <form className='contact-form'>
-                    <div className="row">
-                        <div className="col-lg-6 col-sm-12">
-                            <label for="validationTextarea">Full name</label>
-                            <input onChange={(e) => {setName(e.target.value)}} type="text" className="form-control" placeholder="Full name" required/>
-                        </div>
-                        <div className="col-lg-6 col-sm-12">
-                            <label for="validationTextarea">Email</label>
-                            <input type="text" className="form-control" placeholder="Email" required/>
-                        </div>
-                        <div className='col'>
-                            <label for="validationTextarea">Subject</label>
-                            <input type='text' className='form-control' placeholder='subject' required/>
-                        </div>
-                        <div class="mb-3">
-                            <label for="validationTextarea">Message</label>
-                            <textarea class="form-control"  placeholder="Message" required></textarea>
-                        </div>
-                    </div>
-                     <Button variant="contained" size="large" style={{backgroundColor: 'grey'}}>Submit</Button>
-                </form>
+             <form className='contact-form' id='contactForm' onSubmit={(e) => sendEmail(e)}>
+  <div className="row">
+    <div className="col-lg-6 col-sm-12">
+      <label htmlFor="validationTextarea">Full name</label>
+      <input onChange={(e) => setName(e.target.value)} type="text" className="form-control" placeholder="Full name" required id='name' name='name'/>
+    </div>
+    <div className="col-lg-6 col-sm-12">
+      <label htmlFor="validationTextarea">Email</label>
+      <input type="email" id='email' name='email' className="form-control" placeholder="Email" required/>
+    </div>
+    <div className='col'>
+      <label htmlFor="validationTextarea">Subject</label>
+      <input type='text' id='subject' name='subject' className='form-control' placeholder='subject' required/>
+    </div>
+    <div className="mb-3">
+      <label htmlFor="validationTextarea">Message</label>
+      <textarea className="form-control" id='message' name='message' placeholder="Message" required></textarea>
+    </div>
+  </div>
+  <Button variant="contained" size="large" style={{backgroundColor: 'grey'}} type="submit">Submit</Button>
+</form>
+
             </div>
         </div>
         <div>{name}</div>
