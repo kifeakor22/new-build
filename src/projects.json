@@ -56,7 +56,7 @@
           "https://kifeakor22.github.io/weather-app/",
           "image":"./assets/weather-app.PNG",
           "alt": "weather dashboard",
-          "deployed": "https://github.com/kifeakor22/weather-dashboard",
+          "deployed": "https://kifeakor22.github.io/weather-app/",
           "description": "A 5 days weather forecast App that uses an API from openWeather"
        
       },

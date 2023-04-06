@@ -34,8 +34,8 @@ const Projects = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" href={project.deployed}>Visit Site</Button>
-                  <Button size="small" href={project.repo}>Git Repo <span><GitHubIcon sx={{padding: '5px', color: 'grey'}} /></span></Button>
+              <Button size="small" href={project.deployed} target='_blank'>Visit Site</Button>
+                  <Button size="small" href={project.repo} target='_blank'>Git Repo <span><GitHubIcon sx={{padding: '5px', color: 'grey'}} /></span></Button>
             </CardActions>
           </Card>
         ))}

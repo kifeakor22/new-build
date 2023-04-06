@@ -16,6 +16,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import './style.css'
+import HomeIcon from '@mui/icons-material/Home';
+
 
 
 const drawerWidth = 240;
@@ -63,18 +65,19 @@ const NavBar = (props) => {
           >
             <MenuIcon />
           </IconButton>
+           <span><Link Class="nav-link active" to="/"><HomeIcon fontSize='large'></HomeIcon></Link></span>
           <Typography
             variant="h4"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
             KC Ifeakor
+            
           </Typography>
+      
+
           <Box sx={{ display: { xs: 'none', sm: 'block'}}}>
-            
-            
-                 <Link Class="nav-link active" to="contact">contact</Link> 
-                
+                 <Link Class="nav-link active" to="contact">Contact</Link>      
           </Box>
         </Toolbar>
       </AppBar>
