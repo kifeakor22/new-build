@@ -63,7 +63,7 @@ const NavBar = (props) => {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
-            <MenuIcon />
+            <MenuIcon className='navicon' />
           </IconButton>
            <span><Link Class="nav-link active" to="/"><HomeIcon className='navicon' fontSize='large'></HomeIcon></Link></span>
           <Typography
