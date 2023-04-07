@@ -46,7 +46,7 @@ const Herogrid = () => {
               Hello my name is KC
             </Typography>
             <Typography variant="h4">
-              A UX/UI Frontend developer.
+              A UX/UI Frontend <span className='navicon'>developer.</span>
             </Typography>
             <Typography variant="h5">
               With great focus on accessibility and mobile-first responsive designs. Web development allows me to combine my creative and technical skills in a way that is both challenging and rewarding.

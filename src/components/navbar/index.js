@@ -65,18 +65,18 @@ const NavBar = (props) => {
           >
             <MenuIcon />
           </IconButton>
-           <span><Link Class="nav-link active" to="/"><HomeIcon fontSize='large'></HomeIcon></Link></span>
+           <span><Link Class="nav-link active" to="/"><HomeIcon className='navicon' fontSize='large'></HomeIcon></Link></span>
           <Typography
             variant="h4"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
+           className='navicon'>
             KC Ifeakor
             
           </Typography>
       
 
-          <Box sx={{ display: { xs: 'none', sm: 'block'}}}>
+          <Box className='navicon' sx={{ display: { xs: 'none', sm: 'block'}}}>
                  <Link Class="nav-link active" to="contact">Contact</Link>      
           </Box>
         </Toolbar>
