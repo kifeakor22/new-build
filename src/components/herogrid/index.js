@@ -43,7 +43,7 @@ const Herogrid = () => {
         <Grid item xs={12} sm={8} md={8}>
           <Box data-aos="fade-left"  sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'left' }}>
             <Typography variant="h4">
-              Hello my name is KC
+              
             </Typography>
             <Typography variant="h4">
               A UX/UI Frontend <span className='navicon'>react developer.</span>
