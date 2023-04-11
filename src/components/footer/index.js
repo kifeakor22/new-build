@@ -17,13 +17,13 @@ const Footer = () => {
        
         <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', gap: '20px', padding: '20px' }}>
          <a href="https://github.com/kifeakor22" target="_blank">   
-        <GitHubIcon sx={{color: 'black'}}  fontSize='large'/>
+        <GitHubIcon sx={{color: '#6559cc'}}  fontSize='large'/>
         </a>
           <a href="https://https://www.linkedin.com/in/kc-ifeakor-b79a6031/" target="_blank">
-            <LinkedInIcon sx={{color: 'black'}} className='icon' fontSize='large'/>
+            <LinkedInIcon sx={{color: '#6559cc'}} className='icon' fontSize='large'/>
         </a>
          <a href="https://twitter.com/?lang=en" target="_blank">
-        <TwitterIcon sx={{color: 'black'}} fontSize='large'/>
+        <TwitterIcon sx={{color: '#6559cc'}} fontSize='large'/>
         </a>
         </Box>
          <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', gap: '20px', padding: '20px' }}>
