@@ -25,7 +25,7 @@ const Projects = () => {
   return (
     <>
     
-      <Typography variant='h4' sx={{ textAlign: 'center', padding: '10px' }}>Work Portfolio</Typography>
+      <Typography variant='h4' sx={{ textAlign: 'center', padding: '10px', color: '#6559cc' }}>Work Portfolio</Typography>
       <Box className='project' sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', gap: '20px', padding: '20px' }}>
         {projects.map((project) => (
           <Card data-aos="fade-up" key={project.id} sx={{ maxWidth: 345, padding: '10px',boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.3)' }}>
