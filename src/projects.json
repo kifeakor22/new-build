@@ -70,5 +70,15 @@
           "deployed": "https://calm-narwhal-f7ffd6.netlify.app/",
           "description": "A React based app which allows a user to search their location for Air Quality information for both current and forecasted air quality. The app also provides a visual dashboard to help inform users about whether it would be safe for different outdoor activities."
        
+      },
+          {
+        "id": 8,
+        "title": "Clicky Game",
+        "repo":
+          "https://kifeakor22.github.io/react-game/",
+          "image":"./assets/Clickygame.PNG",
+          "alt": "picture of a clicky game",
+          "deployed": "https://dreamy-tanuki-70a00b.netlify.app/",
+          "description": "A memory testing game built on React.it is a fun and entertaining game that help tests the players memory too."
       }
   ]

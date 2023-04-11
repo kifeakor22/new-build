@@ -50,7 +50,7 @@ const Contact = () => {
            <>
         <div className='container contact'>
             <div data-aos="fade-down"  className='row'>
-                <Typography variant='h3' sx={{textAlign: 'center'}}> Get in touch</Typography>
+                <Typography variant='h4' sx={{textAlign: 'center', color: '#6559cc'}}> Get in touch</Typography>
                 <Typography variant='body2' sx={{textAlign: 'center'}}>I will reach out within 24hrs to provide you the information you need. Thank you for getting in touch.</Typography>
             </div>
             <div data-aos="fade-up"  className='row'>

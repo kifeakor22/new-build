@@ -25,6 +25,8 @@ const Footer = () => {
          <a href="https://twitter.com/?lang=en" target="_blank">
         <TwitterIcon sx={{color: 'black'}} fontSize='large'/>
         </a>
+        </Box>
+         <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', gap: '20px', padding: '20px' }}>
         <p>&copy; KC Ifeakor 2022. All Rights Reserved.</p>
         </Box>
         </>
