@@ -76,8 +76,9 @@ const NavBar = (props) => {
           </Typography>
       
 
-          <Box className='navicon' sx={{ display: { xs: 'none', sm: 'block'}}}>
-                 <Link Class="nav-link active" to="contact">Contact</Link>      
+          <Box className='navicon' sx={{ display: { xs: 'none', sm: 'flex'}}}>
+                 <Link className="nav-link active" to="contact" style={{ marginRight: '20px' }}>Contact</Link>
+                 <Link className="nav-link active" to="https://docs.google.com/document/d/12MlTpLn4k6hYyWIFDeuN0ZgfGeh0kKkorC0kVvYLt5g/edit?usp=sharing" target="_blank">Resume</Link>      
           </Box>
         </Toolbar>
       </AppBar>

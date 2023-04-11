@@ -1,6 +1,6 @@
 .nav-link {
     text-decoration: none;
-    color: white;
+    padding: 10px;
 }
 #bar {
     background-color: beige;
@@ -8,5 +8,7 @@
 }
 
 .navicon {
-    color: #6559cc
+    color: #6559cc;
+    padding-left: 10px;
+   
 }
