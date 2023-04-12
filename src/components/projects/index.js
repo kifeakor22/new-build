@@ -10,6 +10,7 @@ import { Box } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import './style.css'
 
 
 
@@ -44,8 +45,8 @@ const Projects = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" href={project.deployed} target='_blank'>Visit Site</Button>
-                  <Button size="small" href={project.repo} target='_blank'>Git Repo <span><GitHubIcon sx={{padding: '5px', color: 'grey'}} /></span></Button>
+              <Button className='projectBtn' size="small" href={project.deployed} target='_blank'>Visit Site</Button>
+                  <Button className='projectBtn' size="small" href={project.repo} target='_blank'>Git Repo <span><GitHubIcon sx={{padding: '5px', color: '#f06548'}} /></span></Button>
             </CardActions>
           </Card>
         ))}

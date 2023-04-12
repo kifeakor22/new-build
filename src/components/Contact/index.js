@@ -5,10 +5,10 @@ import {Button} from '@mui/material'
 import emailjs from "emailjs-com"; // handles email
 import {Divider} from '@mui/material';
 import 'aos/dist/aos.css';
-import AOS from 'aos';
+import AOS from 'aos'; // import animation 
 
 
-// emailjs configuration 
+// emailjs configuration from email.js site account page 
 const EMAILJS_SERVICE_ID = "service_2lyhxfb";
 const EMAILJS_TEMPLATE_ID = "template_95xjrxn";
 const EMAILJS_USER_ID = "jemLsqsOmUA2njnd9"; //public key
@@ -16,6 +16,7 @@ const EMAILJS_USER_ID = "jemLsqsOmUA2njnd9"; //public key
 
 const Contact = () => {
 
+    // initailise AOS animation, using useEffect to run it everytime the page loads or state changes
     useEffect(()=>{
     AOS.init({
       duration: 2000
@@ -24,13 +25,13 @@ const Contact = () => {
 
     const [response, setResponse] = useState('')
    
-// a function to send email, e .target is the form
+// a function to send email, e .target is the form data on submit
     const sendEmail = (e) => {
         e.preventDefault()
         emailjs.sendForm(
             EMAILJS_SERVICE_ID,
             EMAILJS_TEMPLATE_ID,
-            e.target,
+            e.target,  // form data handed over to emailjs 
             EMAILJS_USER_ID
         ).then(
             (response)=> {
