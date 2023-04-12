@@ -1,5 +1,7 @@
 .profilePic {
     border-radius: 50%;
+    border: 5px solid #6559cc;
+    padding: 3px;
 }
 
 .link {
