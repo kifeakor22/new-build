@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import 'aos/dist/aos.css'; // animation
 import AOS from 'aos';
+import { Height } from '@mui/icons-material';
 
 
   
@@ -28,20 +29,9 @@ const Herogrid = () => {
   return (
     <>
     <Box sx={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
-      <Grid container spacing={1} sx={{ maxWidth: '10000px', width: '100%', position: 'relative' }}>
-        <Grid item xs={12} sm={4} md={4}>
-          <Box data-aos="fade-right"  sx={{ display: 'flex', justifyContent: 'center' }}>
-            <img
-              className="profilePic"
-              src={require("./images/img.png")}
-              width="200"
-              height="auto"
-              alt="profile"
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={8} md={8}>
-          <Box data-aos="fade-left"  sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'left' }}>
+      <Grid container spacing={1} sx={{ maxWidth: '10000px', width: '100%', position: 'relative'}}>
+        <Grid item xs={12} sm={12} md={12}>
+          <Box data-aos="fade-left"  sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
             <Typography variant="h4">
               
             </Typography>

@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import AOS from 'aos'; // import animation 
 
 
+
 // emailjs configuration from email.js site account page 
 const EMAILJS_SERVICE_ID = "service_2lyhxfb";
 const EMAILJS_TEMPLATE_ID = "template_95xjrxn";
@@ -24,6 +25,7 @@ const Contact = () => {
    },[])
 
     const [response, setResponse] = useState('')
+    const [formData, setFormData] = useState({})
    
 // a function to send email, e .target is the form data on submit
     const sendEmail = (e) => {
@@ -46,7 +48,7 @@ const Contact = () => {
             }, (err)=>{console.log('FAILED...', err)}
         )
     }
-
+   
     return (
            <>
         <div className='container contact'>
@@ -81,10 +83,12 @@ const Contact = () => {
                 </form>
             </div>
         </div>
+       
     
         </>
     )
 }
+
 
 
 export default Contact

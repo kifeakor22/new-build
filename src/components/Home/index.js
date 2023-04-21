@@ -4,6 +4,7 @@ import Projects from '../projects'
 import Contact from '../Contact'
 import Footer from '../footer'
 
+
 const Home = () => {
     return(
         <>
