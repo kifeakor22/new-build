@@ -11,7 +11,6 @@ const Home = () => {
         <Herogrid/>
         <Projects/>
         <Contact/>
-        <Footer/>
 
         </>
 

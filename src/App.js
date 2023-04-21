@@ -9,6 +9,7 @@ import NavBar from './components/navbar';
 import Home from './components/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Contact from './components/Contact';
+import Footer from './components/footer';
 
 
 
@@ -27,6 +28,7 @@ function App() {
       </Routes>
       </div>
       </Router>
+      <Footer/>
     </div>
   );
 }
